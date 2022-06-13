@@ -81,7 +81,6 @@ a span {
 
 p {
     margin: 0 0 15px;
-
 }
 
 .clear {
@@ -865,5 +864,3 @@ input::-ms-input-placeholder {
     color: #fff;
     background: #e74c3c;
 }
-
-@media (min-width: 350px) {}
