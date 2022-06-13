@@ -31,6 +31,12 @@ p {
     font-family: "Indie Flower", cursive;
 }
 
+a {
+    font-size: 1.25rem;
+    color: #4ecca3;
+    font-family: "Indie Flower", cursive;
+}
+
 img {
     width: 100%;
 }
