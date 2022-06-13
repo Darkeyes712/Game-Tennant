@@ -8,7 +8,6 @@
     text-align: center;
     display: inline-block;
     position: relative;
-    right: 200px;
     margin: 10px;
 }
 
@@ -43,7 +42,6 @@ img {
 .baceto {
     display: inline-block;
     position: relative;
-    left: 400px;
 }
 
 .kire {
@@ -53,7 +51,6 @@ img {
 .kireto {
     display: inline-block;
     position: relative;
-    right: 50px;
 }
 
 .bottom {
