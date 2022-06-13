@@ -77,7 +77,7 @@ img {
     text-decoration: none;
 }
 
-.butn:hover {
+.butn:active {
     background: #232931;
     text-decoration: none;
 }
