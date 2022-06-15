@@ -2,28 +2,9 @@
 const player1 = "Kireto";
 const player2 = "Baceto";
 
-
-//Boko recording function: 
-function playSound1() {
-    var audio = new Audio('assets/sound/b.mp3');
-    audio.loop = false;
-    audio.play();
-
-    return audio.play();
-}
-
-//Kire recording function: 
-function playSound2() {
-    var audio = new Audio('assets/sound/k.mp3');
-    audio.loop = false;
-    audio.play();
-
-    return audio.play();
-}
-
-//Draw recording function: 
-function playSound3() {
-    var audio = new Audio('assets/sound/d.mp3');
+// Play sound: 
+function playSound(link) {
+    var audio = new Audio(link);
     audio.loop = false;
     audio.play();
 
@@ -46,21 +27,21 @@ function rollTheDice() {
         if (randomNumber1 === randomNumber2) {
             document.querySelector("h1").innerHTML = "Draw!";
             window.scrollTo(0, 0);
-            playSound3();
+            playSound('assets/sound/d.mp3');
         }
 
         else if (randomNumber1 < randomNumber2) {
             document.querySelector("h1").innerHTML
                 = (player2 + " WINS!");
             window.scrollTo(0, 0);
-            playSound1();
+            playSound('assets/sound/b.mp3');
         }
 
         else {
             document.querySelector("h1").innerHTML
                 = (player1 + " WINS!");
             window.scrollTo(0, 0);
-            playSound2();
+            playSound('assets/sound/k.mp3');
         }
-    }, 2500);
+    }, 100);
 }
